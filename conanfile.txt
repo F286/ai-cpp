@@ -1,0 +1,11 @@
+[requires]
+libtorch/1.9.0
+catch2/3.6.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[options]
+libtorch/*:shared=True
+libtorch/*:with_cuda=True  # Set this to True if you want CUDA support, False otherwise
